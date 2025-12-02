@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Broaden Defined</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #1b6a4c;
+      --mustard: #d4a017;
+      --red: #c23616;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar { background-color: var(--green); }
+    .navbar-brand strong { color: var(--mustard); }
+    .nav-link { color: #fff !important; }
+    .nav-link:hover { color: var(--mustard) !important; }
+    .btn-join {
+      background: var(--mustard);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn-join:hover { background: var(--red); color: #fff; }
+
+    /* Hero Section */
+    .hero {
+      min-height: 50vh;
+      background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      color: #fff;
+      padding: 3rem 2rem;
+      margin-top: 80px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero .content { position: relative; z-index: 2; max-width: 600px; }
+    .hero h1 { font-size: 3rem; font-weight: 700; }
+    .hero p { font-size: 1.2rem; margin-top: 1rem; }
+
+    /* Contact Section */
+    .contact-info h3 { color: var(--green); margin-bottom: 1rem; }
+    .contact-info p { margin-bottom: 0.5rem; }
+    .contact-form button {
+      background: var(--mustard);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      transition: 0.3s;
+    }
+    .contact-form button:hover { background: var(--red); color: #fff; }
+
+    .map-container { margin-top: 2rem; height: 300px; border-radius: 10px; overflow: hidden; }
+
+    footer {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a { color: var(--mustard); text-decoration: none; margin: 0 0.5rem; }
+    footer a:hover { text-decoration: underline; }
+
+    @media(max-width: 992px){
+      .hero { flex-direction: column; text-align: center; }
+      .hero img { margin-top: 2rem; width: 250px; height: 250px; }
+    }
+    @media(max-width: 576px){
+      .hero img { width: 200px; height: 200px; margin-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="bd logo.jpg" alt="Logo" width="45" height="45" class="me-2"><strong>Broaden Defined</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-join" href="join-our-community.html">Join Our Community</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero d-flex flex-lg-row flex-column align-items-center justify-content-center">
+  <div class="content">
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you. Reach out with your questions, ideas, or project inquiries.</p>
+  </div>
+  <img src="contact-hero.jpg" alt="Contact Image" style="width: 320px; height: 320px; border-radius: 50%; object-fit: cover; margin-left: 2rem; box-shadow: 0 5px 20px rgba(0,0,0,0.3);">
+</section>
+
+<!-- Contact Form & Info -->
+<section class="container my-5">
+  <div class="row">
+    <!-- Form -->
+    <div class="col-lg-6 contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="col-lg-6 contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> info@broadendefined.com</p>
+      <p><strong>Phone:</strong> +27 123 456 7890</p>
+      <p><strong>Address:</strong> 123 Creative Avenue, Cape Town, South Africa</p>
+      <p><strong>Follow Us:</strong></p>
+      <p>
+        <a href="#">Instagram</a> ·
+        <a href="#">LinkedIn</a> ·
+        <a href="#">TikTok</a>
+      </p>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.467018722648!2d18.42330041520092!3d-33.91886118065648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5047d9f6d4a5%3A0x6b12b187354d235c!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1698300000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 <strong>Broaden Defined</strong> | Crafted with ❤️ by our creative team.</p>
+  <p><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">TikTok</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
