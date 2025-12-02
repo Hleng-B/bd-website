@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Broaden Defined — Testimonials</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Same styles as above */
+    :root { --green: #1b6a4c; --mustard: #d4a017; --red: #c23616; --text-dark: #333; }
+    body { font-family: 'Poppins', sans-serif; background: #fff; color: var(--text-dark); overflow-x: hidden; }
+    .navbar { background-color: var(--green); }
+    .navbar-brand strong { color: var(--mustard); letter-spacing: 1px; }
+    .nav-link { color: #fff !important; transition: .3s; }
+    .nav-link:hover { color: var(--mustard) !important; }
+    .btn-join { background: var(--mustard); color: #000; font-weight: bold; border: none; transition: .3s; }
+    .btn-join:hover { background: var(--red); color: #fff; }
+    .section { padding: 5rem 0; }
+    .section h2 { text-align: center; color: var(--green); margin-bottom: 2rem; font-weight: 700; }
+    .carousel-inner img { width: 400px; height: 400px; object-fit: cover; border-radius: 15px; }
+    .carousel-control-prev, .carousel-control-next { width: 50px; height: 50px; background: rgba(0,0,0,0.4); border-radius: 50%; top: 50%; transform: translateY(-50%); }
+    .carousel-control-prev:hover, .carousel-control-next:hover { background: rgba(0,0,0,0.7); }
+    .carousel-control-prev-icon, .carousel-control-next-icon { filter: invert(1); }
+    footer { background: var(--green); color: white; text-align: center; padding: 2rem 1rem; }
+    footer a { color: var(--mustard); text-decoration: none; margin: 0 0.5rem; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="bd logo.jpg" alt="Logo" width="45" height="45" class="me-2"><strong>Broaden Defined</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-3"><a class="btn btn-join" href="join.html">Join Our Community</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Testimonials Carousel -->
+  <section class="section" style="margin-top: 7rem;">
+    <h2>Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active"><img src="test 1.jpg" alt=""></div>
+        <div class="carousel-item"><img src="test 2.jpg" alt=""></div>
+        <div class="carousel-item"><img src="test 3.jpg" alt=""></div>
+        <div class="carousel-item"><img src="test 4.jpg" alt=""></div>
+        <div class="carousel-item"><img src="test 5.jpg" alt=""></div>
+        <div class="carousel-item"><img src="test 6.jpg" alt=""></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Broaden Defined</strong> | Crafted with ❤️ by our creative team.</p>
+    <p><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">TikTok</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

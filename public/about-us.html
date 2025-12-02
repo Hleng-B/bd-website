@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — Broaden Defined</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #1b6a4c;
+      --mustard: #d4a017;
+      --text-dark: #333;
+    }
+
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      background: #fff; 
+      color: var(--text-dark); 
+      overflow-x: hidden; 
+    }
+
+    .navbar { background-color: var(--green); }
+    .navbar-brand strong { color: var(--mustard); }
+    .nav-link { color: #fff !important; transition: .3s; }
+    .nav-link:hover { color: var(--mustard) !important; }
+
+    /* Hero Section with Background Image */
+    .about-hero {
+      min-height: 75vh;
+      background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1470&q=80.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 6rem 2rem 2rem;
+      position: relative;
+      color: #fff;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.3); /* Light overlay for readability */
+    }
+    .about-hero .content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+    .about-hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    .about-hero p { font-size: 1.2rem; }
+    .about-hero img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Sections */
+    .section { padding: 5rem 1rem; max-width: 1000px; margin: auto; }
+    .section h2 { text-align: center; color: var(--green); margin-bottom: 2rem; }
+    .section p { text-align: center; line-height: 1.8; }
+
+    /* Footer */
+    footer {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a { color: var(--mustard); text-decoration: none; margin: 0 0.5rem; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .about-hero img {
+        width: 200px;
+        height: 200px;
+        margin-top: 2rem;
+      }
+      .about-hero h1 { font-size: 2.2rem; }
+      .about-hero p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="bd logo.jpg" alt="Logo" width="45" height="45" class="me-2"><strong>Broaden Defined</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+          <li class="nav-item ms-3"><a class="btn btn-join" href="join-our-community.html">Join Our Community</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="content">
+      <h1>About <span style="color:var(--mustard);">Broaden Defined</span></h1>
+      <p>We are a creative team passionate about elevating brands through stunning visuals, effective strategies, and impactful campaigns.</p>
+    </div>
+    <img src="zan 3.jpg" alt="Team or About Image">
+  </section>
+
+  <!-- About Us Info Section -->
+  <section class="section">
+    <h2>Who We Are</h2>
+    <p>Broaden Defined is a social media branding agency dedicated to helping businesses stand out. We create tailored strategies, eye-catching visuals, and campaigns that drive results. Our team combines creativity, strategy, and data-driven insights to elevate every brand we work with.</p>
+  </section>
+
+  <section class="section" style="background:#f9f9f9;">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To create bold, innovative, and results-driven social media campaigns that help brands grow.</p>
+    <p><strong>Vision:</strong> To be the go-to creative partner for businesses seeking to make a meaningful impact online.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Broaden Defined</strong> | Crafted with ❤️ by our creative team.</p>
+    <p><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">TikTok</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
